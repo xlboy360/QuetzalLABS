@@ -7,6 +7,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 
+<?php require_once "./menu.html" ?>
+
 <head>
 	<title>Quetzal Labs</title>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -48,121 +50,111 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			});
 		});
 	</script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+		});
+	</script>
 </head>
 
 <body>
-	<div class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="header-left">
-						<div class="logo">
-							<a href="index.html"><img src="images/logo.png" alt="" /></a>
-						</div>
-						<div class="menu">
-							<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
-							<ul class="nav" id="nav">
-								<li><a href="shop.html">Tienda</a></li>
-								<li><a href="team.html">Equipo</a></li>
-								<li><a href="contact.html">Contactanos</a></li>
-								<div class="clear"></div>
-							</ul>
-							<script type="text/javascript" src="js/responsive-nav.js"></script>
-						</div>
-						<div class="clear"></div>
-					</div>
-					<div class="header_right">
-						<!-- start search-->
-						<div class="search-box">
-							<div id="sb-search" class="sb-search">
-								<form>
-									<input class="sb-search-input" placeholder="Enter your search term..." type="search"
-										name="search" id="search">
-									<input class="sb-search-submit" type="submit" value="">
-									<span class="sb-icon-search"> </span>
-								</form>
-							</div>
-						</div>
-						<!----search-scripts---->
-						<script src="js/classie.js"></script>
-						<script src="js/uisearch.js"></script>
-						<script>
-							new UISearch(document.getElementById('sb-search'));
-						</script>
-						<ul class="icon1 sub-icon1 profile_img">
-							<li><a class="active-icon c1" href="#"> </a>
-								<ul class="sub-icon1 list">
-									<div class="product_control_buttons">
-										<a href="#"><img src="images/edit.png" alt="" /></a>
-										<a href="#"><img src="images/close_edit.png" alt="" /></a>
-									</div>
-									<div class="clear"></div>
-									<li class="list_img"><img src="images/1.jpg" alt="" /></li>
-									<li class="list_desc">
-										<h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
-											$12.00</span>
-									</li>
-									<div class="login_buttons">
-										<div class="check_button"><a href="checkout.html">Check out</a></div>
-										<div class="login_button"><a href="login.html">Login</a></div>
-										<div class="clear"></div>
-									</div>
-									<div class="clear"></div>
-								</ul>
-							</li>
-						</ul>
-						<div class="clear"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<div class="main">
 		<div class="shop_top">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-7">
-						<div class="map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.945885698362!2d-99.06258568557169!3d19.32815434902169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce026307a050d7%3A0x131b54122598da98!2sJesus%20Garibay%2059%2C%20Presidentes%20de%20M%C3%A9xico%2C%20Iztapalapa%2C%2009760%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1622236112586!5m2!1ses-419!2smx"
-								width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<div class="row team_box">
+					<h3 class="m_2">Equipo Quetzal</h3>
+					<div class="col-md-3 team1">
+						<a class="popup-with-zoom-anim" href="#small-dialog1"><img src="images/eq1.jpeg"
+								class="img-responsive" title="continue" alt="" /></a>
+						<div id="small-dialog1" class="mfp-hide">
+							<div class="pop_up2">
+								<h2>CEO Quetzal LABS</h2>
+								<p>
+									Encargado de emperrarse cuando pierde en VALORANT
+								</p>
+							</div>
 						</div>
+						<h4 class="m_5"><a href="#">Jean Carlo Gonzales Madalena</a></h4>
+						<p class="m_6">Ingeniero en sistemas. (CEO QuetzalLABS).</p>
 					</div>
-					<div class="col-md-5">
-						<p class="m_8">
-							Quetzal LABS es su casa, sientanse bienvenidos para solucionar dudas, discutir cuestiones
-							sobre la plataforma o simplemente pasar el rato.
-						</p>
-						<div class="address">
-							<p>Calle Jesús Garibay 59 Mz-22 Lt-1,</p>
-							<p>Iztapalapa, CDMX</p>
-							<p>MEXICO</p>
-							<p>Teléfono: (55) 8337 3517</p>
-							<p>Email: <span>support[at]gmail.com</span></p>
-							<p>Siguenos en: <span>Facebook</span>, <span>Twitter</span></p>
+					<div class="col-md-3 team1">
+						<a class="popup-with-zoom-anim" href="#small-dialog2"><img src="images/eq2.jpeg"
+								class="img-responsive" title="continue" alt="" /></a>
+						<div id="small-dialog2" class="mfp-hide">
+							<div class="pop_up2">
+								<h2>SEGURIDAD</h2>
+								<p>
+									Otro pinche mamoncito que se enoja por todo. SADBOY
+								</p>
+							</div>
 						</div>
+						<h4 class="m_5"><a href="#">Luis Yael Bautista Zaldivar</a></h4>
+						<p class="m_6">Seguridad WEB</p>
+					</div>
+					<div class="col-md-3 team1">
+						<a class="popup-with-zoom-anim" href="#small-dialog3"><img src="images/eq3.jpeg"
+								class="img-responsive" title="continue" alt="" /></a>
+						<div id="small-dialog3" class="mfp-hide">
+							<div class="pop_up2">
+								<h2>CEO Quetzal Technology</h2>
+								<p>
+									CEO de la empresa de auditoria Quetzal Technology. Fundador de Quetzal LABS.
+								</p>
+							</div>
+						</div>
+						<h4 class="m_5"><a href="#">Juan de Jesús Salgado Campos</a></h4>
+						<p class="m_6">CEO</p>
+					</div>
+					<div class="col-md-3 team1">
+						<a class="popup-with-zoom-anim" href="#small-dialog4"><img src="images/eq4.jpeg"
+								class="img-responsive" title="continue" alt="" /></a>
+						<div id="small-dialog4" class="mfp-hide">
+							<div class="pop_up2">
+								<h2>Gerente de ventas </h2>
+								<p>
+									Primo, chambiador.
+								</p>
+							</div>
+						</div>
+						<h4 class="m_5"><a href="#">Aksel Rivera Rivera</a></h4>
+						<p class="m_6">Ingeniero en sistemas</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12 contact">
-						<form method="post" action="contact-post.html">
-							<div class="to">
-								<input type="text" class="text" value="Name" onfocus="this.value = '';"
-									onblur="if (this.value == '') {this.value = 'Name';}">
-								<input type="text" class="text" value="Email" onfocus="this.value = '';"
-									onblur="if (this.value == '') {this.value = 'Email';}">
-								<input type="text" class="text" value="Subject" onfocus="this.value = '';"
-									onblur="if (this.value == '') {this.value = 'Subject';}">
-							</div>
-							<div class="text">
-								<textarea value="Message:" onfocus="this.value = '';"
-									onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
-								<div class="form-submit">
-									<input name="submit" type="submit" id="submit" value="Submit"><br>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</form>
+					<div class="col-md-4 team_bottom">
+						<ul class="team_list">
+							<h4>Logros</h4>
+							<li><a href="#">Deploy QuetzalLABS</a>
+								<p>
+									Para nosotros es un logro poder dar por desplegado el sitio de QuetzalLABS para
+									poder ofrecer el mejor servicio y los mejores productos para ustedes.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-8">
+						<ul class="team_list">
+							<h4>Vision de Quetzal</h4>
+							<p class="m_7">
+								La visión de la empresa es poder un día constituirse como una de las empresas más
+								grandes en retail del sector computacional.
+							</p>
+							<img src="images/logo.png" class="img-responsive" alt="" />
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -219,7 +211,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="copy">
 					<p>© 2021 Quetzal Technology <a href="#" target="_blank">Quetzal Technology</a></p>
 				</div>
-				<!-- <dl id="sample" class="dropdown">
+				<dl id="sample" class="dropdown">
 					<dt><a href="#"><span>Change Region</span></a></dt>
 					<dd>
 						<ul>
@@ -237,7 +229,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										class="value">US</span></a></li>
 						</ul>
 					</dd>
-				</dl> -->
+				</dl>
 			</div>
 		</div>
 	</div>
