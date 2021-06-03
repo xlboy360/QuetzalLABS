@@ -135,7 +135,7 @@ body a{
  }
 .header_right{
 	float:right;
-	width:6%;
+	width:15%;
 	margin-top: 16px;
 }
 .sb-search {
@@ -1800,7 +1800,7 @@ fieldset.input input[type="submit"]:hover {
 	padding: 5px 10px;
  }
 .header_right {
-	width: 7%;
+	width: 15%;
  }
 .icon1 ul {
 	width: 250px;

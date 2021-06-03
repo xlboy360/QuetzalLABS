@@ -72,6 +72,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="clear"></div>
 					</div>
 					<div class="header_right">
+					
 						<!-- start search-->
 						<div class="search-box">
 							<div id="sb-search" class="sb-search">
@@ -81,6 +82,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<input class="sb-search-submit" type="submit" value="">
 									<span class="sb-icon-search"> </span>
 								</form>
+								
 							</div>
 						</div>
 						<!----search-scripts---->
@@ -89,9 +91,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<script>
 							new UISearch(document.getElementById('sb-search'));
 						</script>
+						
 						<ul class="icon1 sub-icon1 profile_img">
-							<li><a class="active-icon c1" href="#"> </a>
-								<ul class="sub-icon1 list">
+							
+							<li><a class="active-icon c1" href="checkout.html"> </a>
+								<!--<ul class="sub-icon1 list">
 									<div class="product_control_buttons">
 										<a href="#"><img src="images/edit.png" alt="" /></a>
 										<a href="#"><img src="images/close_edit.png" alt="" /></a>
@@ -100,18 +104,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<li class="list_img"><img src="images/1.jpg" alt="" /></li>
 									<li class="list_desc">
 										<h4><a href="#">velit esse molestie</a></h4><span class="actual">1 x
-											$12.00</span>
+											$13.00</span>
+											
 									</li>
+									
 									<div class="login_buttons">
 										<div class="check_button"><a href="checkout.html">Check out</a></div>
 										<div class="login_button"><a href="login.html">Login</a></div>
 										<div class="clear"></div>
 									</div>
+									-->
 									<div class="clear"></div>
-								</ul>
-							</li>
+								</ul>	
+								<div class="login_button"><a href="login.html">Login</a></div>
+								
+							</li>	
+											
+							
 						</ul>
+						
 						<div class="clear"></div>
+						
 					</div>
 				</div>
 			</div>
@@ -130,12 +143,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<span class="sale-label">Sale!</span>
 							</span>
 							<div class="shop_desc">
-								<h3><a href="#">aliquam volutp</a></h3>
+								<h3><a href="#" >aliquam volutp</a></h3>
 								<p>Lorem ipsum consectetuer adipiscing </p>
 								<span class="reducedfrom">$66.00</span>
 								<span class="actual">$12.00</span><br>
 								<ul class="buttons">
-									<li class="cart"><a href="#">Add To Cart</a></li>
+								<input type="hidden" id="producto" value="aliquam volutp">
+								<input type="hidden" id="precio" value="$12.00">
+									<li class="cart"><a onclick="carrito(1);">Add To Cart</a></li>
 									<li class="shop_btn"><a href="#">Read More</a></li>
 									<div class="clear"> </div>
 								</ul>
@@ -345,6 +360,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
+
+	<script src="js/shop.js"></script>
 </body>
 
 </html>
